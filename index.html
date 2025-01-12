@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Apology</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-image: url('/elsy.jpg'); /* Replace with a link to your desired background image */
+            background-size: cover;
+            margin: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            overflow: hidden;
+        }
+        .navbar {
+            width: 100%;
+            background-color: rgba(76, 175, 80, 0.8);
+            overflow: hidden;
+            position: fixed;
+            top: 0;
+        }
+        .navbar a {
+            float: left;
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 14px 20px;
+            text-decoration: none;
+        }
+        .navbar a:hover {
+            background-color: rgba(69, 160, 73, 0.8);
+        }
+        .apology-card {
+            background-color: white;
+            border: 2px solid #ccc;
+            border-radius: 10px;
+            padding: 20px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            max-width: 400px;
+            text-align: center;
+            margin-top: 60px;
+            animation: fadeIn 1.5s;
+        }
+        .apology-card h1 {
+            color: #333;
+        }
+        .apology-card p {
+            color: #777;
+        }
+        .apology-card button {
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            padding: 10px 20px;
+            cursor: pointer;
+            margin-top: 10px;
+        }
+        .apology-card button:hover {
+            background-color: #45a049;
+        }
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+        @keyframes heartbeat {
+            0%, 20%, 40%, 60%, 80%, 100% { transform: scale(1); }
+            10% { transform: scale(1.1); }
+            30% { transform: scale(1.15); }
+            50% { transform: scale(1.1); }
+            70% { transform: scale(1.15); }
+            90% { transform: scale(1.1); }
+        }
+        .love-animation {
+            color: red;
+            font-size: 24px;
+            animation: heartbeat 2s infinite;
+        }
+    </style>
+</head>
+<body>
+    <div class="navbar">
+        <a href="#home">Home</a>
+        <a href="#apology">Apology</a>
+        <a href="#love-notes">Love Notes</a>
+    </div>
+    <div id="home" class="apology-card">
+        <h1>My Apologies🥺</h1>
+        <p>Welcome to our special space, Elsy. 💖</p>
+    </div>
+    <div id="apology" class="apology-card">
+        <h1>I'm Sorry</h1>
+        <p>Dear Elsy,</p>
+        <p>I've realized my mistakes and want to sincerely apologize for being rude and emotionally absent. I promise to work on being a better partner. 🌹</p>
+        <p>Please forgive me.</p>
+        <p>Love, Mike 💕</p>
+        <button onclick="location.href='https://wa.me/qr/UJFE2AS37BLNF1'">Send WhatsApp</button>
+    </div>
+    <div id="love-notes" class="apology-card">
+        <h1>Love Notes</h1>
+        <p>Dear Elsy,</p>
+        <p>I cherish every moment we spend together. You mean the world to me. 🌺</p>
+        <p>Love, Mike 💕</p>
+        <div class="love-animation">💓</div>
+    </div>
+</body>
+</html>
